@@ -13,7 +13,10 @@
     --second: #2F303A;
     --third: #F5F4FA;
     --fourth: #EEEEEE;
-    --icons: #F5F4FA;
+    --icons: #2196F3;
+    --background:#F5F4FA;
+    --social: #AFB1B8;
+    --border: rgba(175, 177, 184, 1)
 }
 body {
     width: 1600px;
@@ -40,17 +43,24 @@ body {
     text-decoration: none;
     color: var(--blue);
 }
-.envelope{
+.email {
     display: flex;
     width: 32px;
     height: 32px;
-    padding-right:10px;
-    fill:#2196F3;
+    padding-right: 10px;
+    fill: var(--grey);
 }
-.smartphone{
+
+.smartphone {
     display: flex;
-        padding-right: 10px;
-        fill: #2196F3;
+    padding-right: 10px;
+    fill: var(--grey);
+}
+.email:hover {
+    fill: var(--icons);
+}
+.smartphone:hover {
+    fill: var(--icons);
 }
 .studio {
     color: var(--black)
@@ -153,12 +163,13 @@ body {
     justify-content: center;
     width: 270px;
     height: 120px;
-    background-color: var(--icons);
     margin-bottom: 30px;
 }
-.antenna{
-    width: 65.32px;
-    height: 70px;
+.antenna {
+    fill: var(--background);
+}
+.astronaut {
+    fill: var(--background);
 }
 .description {
     list-style: none;
@@ -255,6 +266,33 @@ body {
     color: var(--grey);
     text-decoration: none;
     font-size: 14px;
+}
+.social-icons {
+    list-style: none;
+}
+.instagram {
+    fill: var(--social);
+}
+.instagram:hover {
+    fill: var(--social);
+}
+.company-icon{
+    list-style: none;
+    display: flex;
+}
+.first-company,
+.second-company,
+.third-company,
+.fourth-company,
+.five-company,
+.six-company{
+    border: 1px solid var(--border);
+        border-radius: 4px;
+        justify-content: space-between;
+        margin-right: 30px;
+        width: 170px;
+        height: 92px;
+        margin-top: 50px;
 }
 .footer-address {
     list-style: none;
