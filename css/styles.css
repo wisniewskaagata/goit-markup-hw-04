@@ -49,10 +49,7 @@ body {
 }
 .smartphone{
     display: flex;
-        width: 10px;
-        height: 16px;
         padding-right: 10px;
-        border: 2px dashed;
         fill: #2196F3;
 }
 .studio {
