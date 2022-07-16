@@ -42,10 +42,9 @@ body {
 }
 .envelope{
     display: flex;
-    width: 16px;
-    height: 12px;
+    width: 32px;
+    height: 32px;
     padding-right:10px;
-    border: 2px dashed;
     fill:#2196F3;
 }
 .smartphone{
