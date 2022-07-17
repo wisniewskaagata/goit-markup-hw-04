@@ -16,7 +16,8 @@
     --icons: #2196F3;
     --background:#F5F4FA;
     --social: #AFB1B8;
-    --border: rgba(175, 177, 184, 1)
+    --border: rgba(175, 177, 184, 1);
+    --tittle:rgba(47, 48, 58, 0.4);
 }
 body {
     width: 1600px;
@@ -178,7 +179,7 @@ body {
 .poem {
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--dark);
@@ -269,6 +270,9 @@ body {
 }
 .social-icons {
     list-style: none;
+    display: flex;
+    width:206px;
+    height: 56px;
 }
 .instagram {
     fill: var(--social);
@@ -363,4 +367,16 @@ body {
     line-height: 1.5;
     letter-spacing: 0.03em;
     padding-top: 8px;
+}
+.invitation {
+    font-weight: 700;
+font-size: 14px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--white);
+}
+.socialmedia {
+    list-style: none;
+    display: flex;
 }
