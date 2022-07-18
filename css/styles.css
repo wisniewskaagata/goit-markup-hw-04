@@ -247,7 +247,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: none;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 16px;
 }
 .end {
     font-size: 14px;
@@ -275,6 +275,9 @@ body {
     display: flex;
     width:206px;
     height: 56px;
+    margin-left: 32px;
+    margin-bottom: 30px;
+    gap:10px;
 }
 .socialmedia-team {
     fill: var(--social);
@@ -409,6 +412,8 @@ padding-bottom: 20px;
             background: rgba(255, 255, 255, 0.1);
         }
 
-.socialmedia-link:hover {
-    fill: var(--blue);
+.socialmedia-link:hover,
+ .socialmedia-link:focus{
+    fill: var(--white);
+    background: var(--blue);
 }
