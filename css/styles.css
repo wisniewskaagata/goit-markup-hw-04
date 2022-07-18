@@ -273,11 +273,10 @@ body {
 .social-icons {
     list-style: none;
     display: flex;
-    width:206px;
-    height: 56px;
     margin-left: 32px;
     margin-bottom: 30px;
     gap:10px;
+    fill:var(--social)
 }
 .socialmedia-team {
     fill: var(--social);
