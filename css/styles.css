@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -13,7 +15,6 @@
     --second: #2F303A;
     --third: #F5F4FA;
     --fourth: #EEEEEE;
-    --icons: #2196F3;
     --background:#F5F4FA;
     --social: #AFB1B8;
     --border: rgba(175, 177, 184, 1);
@@ -44,25 +45,20 @@ body {
     text-decoration: none;
     color: var(--blue);
 }
+
 .email {
-    display: flex;
-    width: 32px;
-    height: 32px;
+        width: 26px;
+        height: 12px;
     padding-right: 10px;
     fill: var(--grey);
+}
+.smartphone {
+    padding-right: 10px;
+    fill: var(--grey);
+        width: 20px;
+        height: 16px;
 }
 
-.smartphone {
-    display: flex;
-    padding-right: 10px;
-    fill: var(--grey);
-}
-.email:hover {
-    fill: var(--icons);
-}
-.smartphone:hover {
-    fill: var(--icons);
-}
 .studio {
     color: var(--black)
 }
@@ -82,16 +78,11 @@ body {
 .permalink {
     padding-right: 46px;
 }
-.permalink:focus {
-    color: var(--blue)
-}
-.permalink:hover {
-    color: var(--blue)
-}
-.permalink-mail {
-    padding-left: 50px;
-}
-.permalink-mail:hover {
+.permalink:focus,
+.permalink:hover,
+.write a:hover,
+.write a:focus
+ {
     color: var(--blue)
 }
 
@@ -108,24 +99,30 @@ body {
     letter-spacing: 0.03em;
     list-style: none;
     display: flex;
-    padding-left: 275px;
+    margin-left: auto;
+    align-items: center;
+}
+.permalink-telephone {
+    padding-left: 50px;
 }
 .section-tittle {
     padding: 94px;
     background-color: var(--second);
     text-align: center;
-    background-image: url(../images/people.jpg);
-    background-size: cover;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/people.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
 }
-.section-lorem {
-    padding-top: 94px;
-}
+
 .container {
     width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
 }
+
 .tittle {
     font-weight: 900;
     font-size: 44px;
@@ -137,6 +134,7 @@ body {
     margin-bottom: 30px;
     padding-top: 104px;
 }
+
 .service {
     font-weight: 700;
     font-size: 16px;
@@ -158,6 +156,9 @@ body {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+.section-lorem {
+    padding-top: 94px;
 }
 .icons{
     display: flex;
@@ -188,7 +189,7 @@ body {
     color: var(--grey);
     font-size: 14px;
     letter-spacing: 0.03em;
-    line-height: 1.5;
+    line-height: 1.71;
     text-transform: none;
     padding-top: 10px;
 }
@@ -217,6 +218,7 @@ body {
     line-height: 1.17px;
     letter-spacing: 0.03em;
     text-align: center;
+    padding-bottom: 50px;
 }
 .company {
     list-style: none;
@@ -283,21 +285,26 @@ body {
 .company-icon{
     list-style: none;
     display: flex;
+    fill: var(--social);
 }
-.first-company,
-.second-company,
-.third-company,
-.fourth-company,
-.five-company,
-.six-company{
-    border: 1px solid var(--border);
-        border-radius: 4px;
-        justify-content: space-between;
-        margin-right: 30px;
-        width: 170px;
+.client {
+    width: 170px;
         height: 92px;
-        margin-top: 50px;
+        border: 1px solid #afb1b8;
+        border-radius: 4px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-right: 30px;
 }
+
+.client:hover,
+.client:focus {
+    fill: var(--blue);
+    border-color: var(--blue);
+    cursor: pointer;
+}
+
 .footer-address {
     list-style: none;
 }
@@ -310,7 +317,9 @@ body {
 .page-portfolio {
     align-items: center;
 }
-
+.media-icons {
+    fill: var(--white);
+}
 .background {
     padding: 94px;
 }
@@ -330,6 +339,7 @@ body {
     margin-left: 8px;
     border-style: none;
     padding: 6px 22px;
+    margin-bottom: 50px;
 }
 .click:hover {
     background-color: var(--blue);
@@ -342,6 +352,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    
 }
 .border {
     border-left: 1px solid var(--fourth);
@@ -351,8 +362,11 @@ body {
 }
 .img {
     display: flex;
-    margin-top: 56px;
     background: var(--white);
+}
+.img:hover {
+    border: 1px solid #EEEEEE;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .image-name {
     letter-spacing: 0.03em;

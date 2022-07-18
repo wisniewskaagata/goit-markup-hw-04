@@ -13,19 +13,24 @@
 </head>
 
 <body>
-    <header class="border-line">
+    <header>
         <div class="page-header container">
             <a class="logo" href="index.html"><span>Web</span><span class="studio">Studio</span></a>
             <nav>
                 <ul class="menu">
                     <li><a class="permalink" href="index.html">Agencja</a></li>
                     <li><a class="permalink" href="portfolio.html">Portfolio</a></li>
-                    <li><a class="permalink" href="kontakt">Kontakt</a></li>
+                    <li><a href="kontakt">Kontakt</a></li>
                 </ul>
             </nav>
             <ul class="write">
-                <li><a class="permalink-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="permalink-mail" href="tel:+048111111111"> +048 111 111 111</a></li>
+                <li class="hover-mail"><a class="permalink-mail" href="mailto:info@devstudio.com">
+                        <svg class="email" width="16" height="12">
+                            <use href="./images/sprite.svg#icon-email"></use>
+                        </svg>info@devstudio.com</a></li>
+                <li><a class="permalink-telephone" href="tel:+048111111111"> <svg class="smartphone" width="10" height="16">
+                            <use href="./images/sprite.svg#icon-smartphone"></use>
+                        </svg>+048 111 111 111</a></li>
             </ul>
         </div>
     </header>
