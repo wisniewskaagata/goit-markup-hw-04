@@ -33,19 +33,17 @@ body {
 }
 .page-header {
     display: flex;
-    align-items: center;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    justify-content: left;
 }
 .logo {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.1;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--blue);
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 .email {
         width: 26px;
@@ -74,6 +72,7 @@ body {
     list-style: none;
     display: flex;
     padding-left: 93px;
+    padding-top: 32px;
 }
 .permalink {
     padding-right: 46px;
@@ -83,11 +82,8 @@ body {
 }
 .permalink:focus,
 .permalink:hover,
-.permalink-contact:hover,
-.premalink-contact:focus,
 .write a:hover,
-.write a:focus
- {
+.write a:focus {
     color: var(--blue);
 }
 .write a {
@@ -95,6 +91,9 @@ body {
     color: var(--grey);
     text-decoration: none;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .write {
     font-style: normal;
