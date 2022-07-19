@@ -80,8 +80,8 @@ body {
 .permalink-telephone {
     padding-left: 50px;
 }
-.permalink:focus,
-.permalink:hover,
+.menu a:focus,
+.menu a:hover,
 .write a:hover,
 .write a:focus {
     color: var(--blue);
