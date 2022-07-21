@@ -293,7 +293,16 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
-    gap: 30px;
+    margin-right: 30px;
+}
+.client-last{
+    width: 170px;
+        height: 92px;
+        border: 1px solid #afb1b8;
+        border-radius: 4px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
 }
 .client:hover,
 .client:focus {
