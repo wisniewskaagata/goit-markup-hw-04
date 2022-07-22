@@ -183,10 +183,6 @@ body {
     justify-content: center;
     margin-bottom: 30px;
 }
-.description {
-    list-style: none;
-    display: flex;
-}
 .poem {
     font-weight: 700;
     font-size: 14px;
