@@ -80,14 +80,18 @@ body {
 .permalink-telephone {
     padding-left: 50px;
 }
+.permalink:hover,
+.permalink:focus,
 .menu a:focus,
-.menu a:hover{
-    color: var(--blue);
+.menu a:hover,
+.write a:hover,
+.write a:focus {
+    color: var(--blue)
 }
 .write a:hover svg,
 .write a:focus svg {
     fill: var(--blue);
-}
+    }
 .write a {
     font-weight: 500;
     color: var(--grey);
@@ -284,6 +288,7 @@ body {
     list-style: none;
     display: flex;
     fill: var(--social);
+    gap: 30px;
 }
 .client {
     width: 170px;
@@ -292,8 +297,7 @@ body {
     border-radius: 4px;
     align-items: center;
     justify-content: center;
-    display: flex;
-    margin-right: 30px;
+    display: flex; 
 }
 .client-last{
     width: 170px;
@@ -382,11 +386,9 @@ body {
 .img {
     display: flex;
     background: var(--white);
-    max-width: 370px;
 }
 .img:hover {
     cursor: pointer;
-    border: 1px solid var(--white);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .border {
